@@ -8,6 +8,7 @@
 import Foundation
 import WebKit
 import SwiftUI
+import AVKit
 
 
 struct videoView: UIViewRepresentable{
@@ -24,3 +25,4 @@ struct videoView: UIViewRepresentable{
         
     }
 }
+ let player = videoView(viedoID: "")

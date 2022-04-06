@@ -15,11 +15,14 @@ struct ListDetailView: View {
         NavigationView {
             VStack{
                 Text("영상이 들어가는 칸")
+                // 유튜브정책때문에  webkitView를 통해 따로 id만 가져와 뿌려주는 것
                 videoView(viedoID: "XHMdIA6bEOE")
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 250)
                     .cornerRadius(12)
-                //아래 방식은 유튜브에서 못가져옴
+                
+                
+                //아래 방식은 유튜브에서 못가져옴( 일반 영상은 가능
 //                VideoPlayer(player: AVPlayer(url: URL(string: "https://www.youtube.com/watch?v=XHMdIA6bEOE.com")!))
                     
                 Text("제목")

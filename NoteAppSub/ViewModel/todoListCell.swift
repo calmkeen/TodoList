@@ -15,14 +15,19 @@ struct todoCell: View {
     @EnvironmentObject var dateFormatter: DateFormatter
 
     var body: some View{
-        VStack{
-            Text(cellModel.context.prefix(8))
-                .font(.body)
-                .lineLimit(1)
-//           Text(createDate)
-            Text("\(cellModel.createDate, formatter: dateFormatter)")
-                .font(.caption)
-                .foregroundColor(Color(UIColor.secondaryLabel))
+        HStack {
+            Image(cellModel.image)
+                .resizable()
+                .frame(width: 60.0, height: 60.0)
+            VStack{
+                Text(cellModel.context.prefix(8))
+                    .font(.body)
+                    .lineLimit(1)
+    //           Text(createDate)
+                Text("\(cellModel.createDate, formatter: dateFormatter)")
+                    .font(.caption)
+                    .foregroundColor(Color(UIColor.secondaryLabel))
+            }
         }
     }
 }
@@ -31,7 +36,7 @@ struct todoCell: View {
 
 struct todoListCell_Previews: PreviewProvider {
     static var previews: some View {
-        todoCell(cellModel: CellModel(context: "testString"))
+        todoCell(cellModel: CellModel(context: "testString",image: "jang"))
             .environmentObject(DateFormatter.todoDateFormatter)
             
     }
