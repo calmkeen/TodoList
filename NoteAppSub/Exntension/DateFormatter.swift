@@ -1,7 +1,7 @@
 import Foundation
 
 extension DateFormatter{
-    static let MemoDateFormatter: DateFormatter = {
+    static let todoDateFormatter: DateFormatter = {
         let date = DateFormatter()
         date.dateStyle = .long
         date.timeStyle = .none
