@@ -12,8 +12,8 @@ import SwiftUI
 
 
 class ListDataViewModel: ObservableObject {
-    @Published var todoListCell: [CellModel]
     
+    @Published var todoListCell: [CellModel]
     init(){
         todoListCell = [
             CellModel(context : "짱구는 못말려"),

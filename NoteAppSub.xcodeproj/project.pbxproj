@@ -15,6 +15,8 @@
 		751ACFCF27FC39EF0015647E /* todoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751ACFCE27FC39EF0015647E /* todoListCell.swift */; };
 		751ACFD127FC3A690015647E /* ListDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751ACFD027FC3A690015647E /* ListDataViewModel.swift */; };
 		751ACFD327FC3ADA0015647E /* todoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751ACFD227FC3ADA0015647E /* todoListModel.swift */; };
+		751ACFD527FD62B00015647E /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751ACFD427FD62B00015647E /* ListDetailView.swift */; };
+		751ACFD727FD76000015647E /* WebKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751ACFD627FD76000015647E /* WebKitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		751ACFCE27FC39EF0015647E /* todoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListCell.swift; sourceTree = "<group>"; };
 		751ACFD027FC3A690015647E /* ListDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataViewModel.swift; sourceTree = "<group>"; };
 		751ACFD227FC3ADA0015647E /* todoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListModel.swift; sourceTree = "<group>"; };
+		751ACFD427FD62B00015647E /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
+		751ACFD627FD76000015647E /* WebKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				751ACFBC27FBFD2D0015647E /* ContentView.swift */,
+				751ACFD427FD62B00015647E /* ListDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			children = (
 				751ACFCE27FC39EF0015647E /* todoListCell.swift */,
 				751ACFD027FC3A690015647E /* ListDataViewModel.swift */,
+				751ACFD627FD76000015647E /* WebKitViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,10 +189,12 @@
 			files = (
 				751ACFBD27FBFD2D0015647E /* ContentView.swift in Sources */,
 				751ACFD327FC3ADA0015647E /* todoListModel.swift in Sources */,
+				751ACFD727FD76000015647E /* WebKitViewModel.swift in Sources */,
 				751ACFBB27FBFD2D0015647E /* NoteAppSubApp.swift in Sources */,
 				751ACFCD27FC22B50015647E /* DateFormatter.swift in Sources */,
 				751ACFCF27FC39EF0015647E /* todoListCell.swift in Sources */,
 				751ACFD127FC3A690015647E /* ListDataViewModel.swift in Sources */,
+				751ACFD527FD62B00015647E /* ListDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

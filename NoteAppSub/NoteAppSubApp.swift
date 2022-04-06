@@ -12,6 +12,8 @@ struct NoteAppSubApp: App {
     var body: some Scene {
         WindowGroup {
             NoteMain()
+                .environmentObject(ListDataViewModel())
+                .environmentObject(DateFormatter.todoDateFormatter)
         }
     }
 }
